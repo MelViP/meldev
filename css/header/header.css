@@ -1,0 +1,44 @@
+/*
+<header>
+    <nav class="menu">
+        <ul>
+            <li>Home</li>
+            <li>skills</li>
+            <li>work</li> <!--aki proyektos-->
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="changeLan"></div>
+    <div class="darkMode"></div>
+</header>
+*/
+header { /*glass effect*/
+ /* background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.logoMel{
+  width: 3rem;
+  height: 3rem;
+}
+
+.menu ul {
+  display: none;
+  justify-content: space-around;
+  padding: 5px 5px;
+}
+
+.menu>ul>li:hover {
+    cursor: pointer;
+}
+
+/*mobile*/
+

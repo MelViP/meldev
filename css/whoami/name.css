@@ -1,0 +1,12 @@
+.personalData{
+    margin: 5rem 3rem;
+    line-height: 1;
+    gap: 1.78rem;
+}
+.personalData hgroup{
+    position: flex;
+}
+.name{
+    margin: 5rem 1.78rem;
+    font-family: var(--heroName);
+}

@@ -1,0 +1,71 @@
+/*for mobile an tablet mini*/
+.hamburguerMenu, .closeMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 2rem;
+  height: 3rem;
+  border: 0;
+  background: transparent;
+  gap: 0.5rem;
+  transition: all .5s;
+}
+.hamburguerMenu{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 8px;
+}
+.closeMenu{
+  align-self: center;
+}
+.hamburguerMenu > div,
+.closeMenu > div {
+  background-color: var(--yellow-moon);
+  height: 3.5px;
+  width: 100%;
+  border-radius: 5px;
+  transform-origin: left;
+  transition: all 0.5s;
+  box-shadow: 2px 2px 8px var(--yellow-moon);
+}
+.closeMenu div:first-child{
+  transform: rotate(45deg);
+}
+.closeMenu div:nth-child(2){opacity: 0}
+.closeMenu div:last-child{
+  transform: rotate(-45deg);
+}
+.closeMenu:active{
+  opacity: 0;
+}
+.hamburguerMenu:active div:first-child {
+  transform: rotate(40deg);
+}
+.hamburguerMenu:active div:nth-child(2) {
+  opacity: 0;
+}
+.hamburguerMenu:active div:last-child {
+  transform: rotate(-41deg);
+}
+.dropdownMenu {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  width: 100%;
+  height: 15.78rem; 
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 2;
+  transition: all .5s;
+}
+.dropdownMenu > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.78rem;
+  margin-bottom: 1.78rem;
+  transition: all .5s;
+}
