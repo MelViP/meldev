@@ -4,15 +4,16 @@
 
 # Portafolio Mel
 
-This is a portafolio that I made to make the world know about me
+This is a professional portafolio
+Trying this to be a full HTML5, CSS3 and JavaScript vanilla project that animates and draws all the images in order to practice
 
 
 ## Lessons Learned
 
-how to animate with JS
+JS canva animations
 
 
-## Features
+## Comming - Features
 
 - Light/dark mode toggle
 - Live previews
