@@ -1,0 +1,62 @@
+.socialMedia{
+    display: flex;
+    gap: 1rem;
+}
+.socialMedia > span{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*LinkedIn*/
+.linkedIn{
+    background-color: #0288D1;
+    z-index: 0;
+    transition: all .3s;
+}
+.linkedIn a{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+.linkedIn:hover{
+    background-color: azure;
+}
+.linkedIn:hover a{
+    color: #0288D1;
+}
+/*CodePen*/
+.codePen{
+    transition: all .3s;
+}
+.codePen a{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+.frontSquare{
+    border: solid 2px black;
+    transform: translate(-50%, -50%);
+    transform: rotate3d(45deg);
+    width: 1rem;
+    height: 1rem;
+}
+/*github*/
+.github{
+    background-color: rgb(23, 22, 22);
+    z-index: 0;
+    transition: all .3s;
+    gap: -1px;
+    display: flex
+}
+.gatitoPulpo{ /*canvas de cara gatitio*/
+    position: relative;
+    margin-top: .4rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: aliceblue;
+}

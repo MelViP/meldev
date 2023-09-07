@@ -1,0 +1,65 @@
+.personalData hgroup{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin: 20rem 0 .5rem; /*mobile margin*/
+}
+.name{
+    font-family: var(--secondTitle);
+    text-transform: capitalize;
+    font: 1rem;
+    text-shadow: -2px 1px 0 #e2f3e0,
+    -1px -1px 3px var(--pinky);
+    color: var(--blueyPlus);
+}
+.jobtitle{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: var(--mainTitle);
+    text-transform: uppercase;
+    text-shadow: 0 5px 0 rgba(0, 0, 0,1),
+    0 10px 40px rgba(0, 0, 0,.2),
+    0 20px 30px rgba(0, 0, 0,.2),
+    0 30px 20px rgba(0, 0, 0,.2);
+    color: rgba(255, 13, 211, 1);
+    position: relative;
+    /* z-index: 1; */
+}
+.jobtitle::before{
+    position: absolute;
+    left: -1px;
+    top: -1.7%;
+    content: attr(data-jobtitle);
+    text-shadow: 0 5px 0 rgba(0, 0, 0, .5);
+    color: rgba(30, 189, 96, 1);
+    transition: all .5s;
+    /* z-index: 2; */
+}
+.jobtitle::after{
+    position: absolute;
+    left: -1px;
+    top: -1.5%;
+    content: attr(data-jobtitle);
+    text-shadow: 0 5px 0 rgba(0, 0, 0, .5);
+    color: rgb(250, 233, 227);
+    transition: all .5s;
+    /* z-index: 3; */
+}
+.jobtitle:hover::before{
+    left: 4.5px;
+    top: -5.4%;
+}
+.jobtitle:hover::after{
+    left: 8.5px;
+    top: -12%;
+}
+/*
+
+text-shadow: .5px 3px 0 rgba(0, 0, 0,1),
+    1px 5px rgba(30, 189, 96, 1),
+    1px 6px rgba(64, 30, 189, 1),
+    1px 7px rgba(189, 30, 57, 1)
+    */

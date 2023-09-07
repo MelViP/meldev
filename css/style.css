@@ -4,14 +4,25 @@
     --bluey: #04306E;
     --blueyPlus: #081A49;
     --yellow-moon: #fef790;
-    --heroName: font-family: "Vtks Tatuage2";
+    --mainTitle: "groovy";
+    --secondTitle: "modestic";
 }
-
 @font-face {
-    font-family: "Vtks Tatuage2";
-    src: url('/assets/VtksTatuage2-3GzL.ttf');
+    font-family: "PoppinsBold";
+    src: url("../assets/fonts/Poppins-1/Poppins-Black.ttf");
 }
-
+@font-face {
+    font-family: "poppinsRegular";
+    src: url("../assets/fonts/Poppins-1/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "groovy";
+    src: url("../assets/fonts/Super\ Dream.ttf");
+}
+@font-face {
+    font-family: "modestic";
+    src: url("../assets/fonts/Modestic\ Sans\ Font/");
+}
 .canvasu{
     padding: 0;
     margin: 0;

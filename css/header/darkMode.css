@@ -1,0 +1,35 @@
+/*
+<div class="darkMode">
+    <section class="night"></section>
+    <section class="day"></section>
+</div>
+*/
+.darkMode{
+    display: flex;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+}
+.night{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 20% 50% 50%;
+    box-shadow: 5px 5px 0 gray;
+}
+.night::before{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: 50%;
+    top: 1;
+    border-radius: 100%;
+    background-color: var(--pinkyPlus);
+}
+.day{
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--yellow-moon);
+    border-radius: 50%;
+}
