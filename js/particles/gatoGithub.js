@@ -8,4 +8,8 @@ window.addEventListener("DOMContentLoaded",() => {
     }
 );
 
+//dibujar cabeza
+//dibujar orejas
+//dibujar ojos
+//dibujar cara
 window.addEventListener("resize", resizeReset);
