@@ -9,6 +9,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    -webkit-mask-image: linear-gradient(-55deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+
+    transition: 1s all;
+    animation: shine 2s infinite ease;
 }
 
 /*LinkedIn*/
@@ -16,6 +22,7 @@
     background-color: #0288D1;
     z-index: 0;
     transition: all .3s;
+    animation: appearLeft 2s ease-in-out;
 }
 .linkedIn a{
     font-family: 'Roboto', sans-serif;
@@ -32,6 +39,7 @@
 /*CodePen*/
 .codePen{
     transition: all .3s;
+    animation: appearUp 2s ease-in-out;
 }
 .codePen a{
     display: block;
@@ -41,22 +49,54 @@
 .frontSquare{
     border: solid 2px black;
     transform: translate(-50%, -50%);
-    transform: rotate3d(45deg);
+    transform: rotate(45deg);
     width: 1rem;
     height: 1rem;
 }
 /*github*/
 .github{
-    background-color: rgb(23, 22, 22);
-    z-index: 0;
     transition: all .3s;
-    gap: -1px;
-    display: flex
+    background: url(../../assets/loguitos/github-mark-white.svg);
+    background-size: contain;
+    animation: appearRigth 2s ease-in-out;
+    filter: drop-shadow(50px #000);
 }
-.gatitoPulpo{ /*canvas de cara gatitio*/
-    position: relative;
-    margin-top: .4rem;
-    width: 1rem;
-    height: 1rem;
-    background-color: aliceblue;
+
+@keyframes appearLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+@keyframes appearRigth {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+@keyframes appearUp {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes shine {
+    from{
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
 }
