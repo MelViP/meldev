@@ -5,7 +5,8 @@
     --blueyPlus: #081A49;
     --yellow-moon: #fef790;
     --mainTitle: "groovy";
-    --secondTitle: "modestic";
+    --secondTitle: "PoppinsBold";
+    --menu: "PoppinsBold";
 }
 @font-face {
     font-family: "PoppinsBold";
@@ -22,6 +23,10 @@
 @font-face {
     font-family: "modestic";
     src: url("../assets/fonts/Modestic\ Sans\ Font/");
+}
+@font-face {
+    font-family: 'Rubik' ;
+    src: url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');;
 }
 .canvasu{
     padding: 0;

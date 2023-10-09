@@ -25,8 +25,13 @@ hamBtn.addEventListener("click", (event) => {
   closeMenu.addEventListener('click', () => {
     event.preventDefault();
     const textLine = document.querySelector(".dropdownMenu");
+    closeMenu.style.cssText = `
+      transition: 2s all;
+      animation: desaparecer 2s ease-in-out;
+    `;
     textLine.remove();
-  })
+    }
+  );
 
   return textLine;
 });

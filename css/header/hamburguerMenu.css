@@ -63,13 +63,36 @@
   border-radius: 0 0 10px 10px;
   position: absolute;
   z-index: 100;
-  transition: all .5s;
+  transition: 2s all;
+  animation: showsUp 2m1 ease-in-out;
 }
 .dropdownMenu > ul {
   display: flex;
   flex-direction: column;
-  gap: 1.78rem;
+  gap: 1.25rem;
   margin-bottom: 1.78rem;
   transition: all .5s;
   z-index: 100;
+  transition: 2s all;
+  animation: appear 2s ease-in-out;
+}
+.dropdownMenu > ul > li {
+  color: aliceblue;
+  font-family: var(--menu);
+  text-transform: capitalize;
+}
+
+@keyframes showsUp {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes appear {
+  from{ opacity: 0;} to {opacity: 1;}
+}
+@keyframes dedesaparecer {
+  from{ opacity: 1} to {opacity: 0}
 }
