@@ -1,38 +1,46 @@
-/*for mobile an tablet mini*/
-.hamburguerMenu, .closeMenu {
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --bar-width: 2rem;
+  --bar-height: .3125rem;
+  --hamburguer-gap: .375rem;
+  --background: white;
+  --animation-timing: 200ms ease-in-out;
+}
+
+.hamburguerMenu {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 2rem;
-  height: 3rem;
-  border: 0;
-  background: transparent;
-  gap: 0.5rem;
-  transition: all .5s;
-}
-.hamburguerMenu{
-  /* position: absolute;
-  right: 0;
-  top: 0;
-  margin-right: px;  */
+  gap: var(--hamburguer-gap);
+  width: max-content;
+  z-index: 2;
+  cursor: pointer;
 }
 
-.hamburguerMenu > div {
+.hamburguerMenu::after,
+.hamburguerMenu::before,
+.hamburguerMenu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
   background-color: var(--yellow-moon);
-  height: 3.5px;
-  width: 100%;
-  border-radius: 5px;
-  transform-origin: left;
-  transition: all 0.5s;
-  box-shadow: 2px 2px 8px var(--yellow-moon);
-}
-.hamburguerMenu:active div:first-child {
-  transform: rotate(40deg);
-}
-.hamburguerMenu:active div:nth-child(2) {
-  opacity: 0;
-}
-.hamburguerMenu:active div:last-child {
-  transform: rotate(-41deg);
+  border-radius: 9999px;
+  transition: opacity var(--animation-timing), width var(--animation-timing);
 }
 
+.hamburguerMenu input{ 
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburguerMenu input:checked {
+  opacity: 0;
+  width: 0;
+}
