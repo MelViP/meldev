@@ -1,13 +1,13 @@
 .dropdownMenu {
   z-index: 2;
     position: absolute;
-    right: 1.5rem;
-    top: 4rem;
+    right: 0.1rem;
+    top: 3rem;
     padding: 1.5rem;
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(6.5px);
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px 0 10px 10px;
     transition: 2s all;
     animation: showsUp 2ms ease-in-out;
   }
