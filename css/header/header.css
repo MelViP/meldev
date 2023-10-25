@@ -4,15 +4,19 @@ header { /*glass effect*/
   backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(6.5px);
   border-radius: 10px;*/
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: .5rem;
-}
-header nav{
+  position: relative;
   display: flex;
   justify-content: space-between;
+  margin: 1rem;
+}
+
+header nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stickyNav{ /*show only in desktop*/
+  display: none;
 }
 .menu ul {
   display: none;
