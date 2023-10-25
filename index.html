@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./css/canvas.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header/hamburguerMenu.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
@@ -10,7 +11,8 @@
     <link rel="stylesheet" href="./css/header/logo.css" />
     <link rel="stylesheet" href="./css/header/darkMode.css" />
     <link rel="stylesheet" href="./css/heroSection/socialMedia.css" />
-
+    <link rel="stylesheet" href="./css/about_me/about_me.css" />
+    <link rel="stylesheet" href="./css/header/dropDownMenu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,29 +37,26 @@
   <body>
     <canvas class="canvasu"></canvas>
     <header data-header>
-      <nav>
-        <div class="logoMel">
-          <section class="code">
-            <span class="material-symbols-outlined"> code </span>Code
-          </section>
-          <section class="Mel">Mel</section>
-        </div>
-        <div class="darkMode">
-          <section class="night"></section>
-          <section class="day"></section>
-        </div>
-        <button class="hamburguerMenu">
-          <div></div>
-          <div></div>
-          <div></div>
-        </button>
-        <div class="changeLan"></div>
-      </nav>
-      <div class="parallax">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+      <div class="logoMel">
+        <section class="code">
+          <span class="material-symbols-outlined"> code </span>Code
+        </section>
+        <section class="Mel">Mel</section>
       </div>
+      <nav class="stickyNav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Work</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="changeLan"></div>
+      <label class="hamburguerMenu">
+        <input type="checkbox">
+        <span></span>
+      </label>
     </header>
     <div class="heroSection">
       <div class="whoami">
@@ -67,7 +66,6 @@
               front end developer
             </h1>
             <h2 class="name">Melany Villalobos</h2>
-
           </hgroup>
           <ul class="socialMedia">
             <span class="linkedIn">
@@ -80,27 +78,30 @@
             </span>
 
             <span class="github">
-              <a href="https://github.com/MelViP"></a>            
+              <a href="https://github.com/MelViP"></a>
             </span>
           </ul>
         </div>
       </div>
-      <details class="aboutMe_container">
-        <summary>About the author</summary>
-        <figure>
-          <img src="#" alt="Mel's face in here" class="profile" />
-        </figure>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-          corrupti accusamus. Molestiae id, quas fuga distinctio nesciunt
-          laboriosam corrupti nisi reiciendis quisquam eos facilis repellat,
-          blanditiis minus. Suscipit, dolor doloremque.
-        </p>
-      </details>
     </div>
+    <section class="aboutMe_container">
+      <h2>About the author</h2>
+      <figure>
+        <img
+          src="./assets/loguitos/logo2.png"
+          alt="Mel's face in here"
+          class="profile"
+        />
+      </figure>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+        corrupti accusamus. Molestiae id, quas fuga distinctio nesciunt
+        laboriosam corrupti nisi reiciendis quisquam eos facilis repellat,
+        blanditiis minus. Suscipit, dolor doloremque.
+      </p>
+    </section>
 
-    <section class=""></section>
-    <section class="contactMe_container"></section>
+    <!-- <section class="contactMe_container"></section> -->
     <script src="./js/header/hamburguer-controller.js"></script>
     <script src="./js/particles/canvas.js"></script>
     <script src="./js/particles/gatoGithub.js"></script>

@@ -1,0 +1,14 @@
+.aboutMe_container{
+    height: 100vh;
+    max-width: 90%;
+    background-color: aliceblue;
+}
+
+.aboutMe_container > figure {
+    align-items: center;
+}
+.profile{
+    width: 50vw;
+
+}
+

@@ -1,35 +1,54 @@
-/*
-<div class="darkMode">
-    <section class="night"></section>
-    <section class="day"></section>
-</div>
-*/
-.darkMode{
-    display: flex;
-    width: fit-content;
-    height: auto;
-    display: flex;
-    gap: 1rem;
+/* The switch - the box around the slider */
+.darkMode-switch {
+  position: relative;
+  display: inline-block;
+  width: 3.75rem;
+  height: 2.125rem;
 }
-.night{
-    width: 2rem;
-    height: 2rem;
-    background-color: white;
-    border-radius: 20% 50% 50%;
-    box-shadow: 5px 5px 0 gray;
+
+.checkbox {
+    z-index: 2;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    opacity: 0;
 }
-.night::before{
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    left: 50%;
-    top: 1;
-    border-radius: 100%;
-    background-color: var(--pinkyPlus);
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 34px;
+  background-color: var(--bluey);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
-.day{
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--yellow-moon);
-    border-radius: 50%;
+
+.slider:before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: var(--yellow-moon);
+  transition: 0.4s;
 }
+
+.checkbox:checked + .slider {
+  background-color: #2196f3;
+}
+
+.checkbox:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.checkbox:checked + .slider:before {
+  transform: translateX(26px);
+
+} 
