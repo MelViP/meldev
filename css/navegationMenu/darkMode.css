@@ -7,11 +7,11 @@
 }
 
 .checkbox {
-    z-index: 2;
-    position: relative;
-    width: 25px;
-    height: 25px;
-    opacity: 0;
+  z-index: 2;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
 }
 
 .slider {
@@ -50,5 +50,4 @@
 
 .checkbox:checked + .slider:before {
   transform: translateX(26px);
-
-} 
+}

@@ -1,12 +1,11 @@
 :root{
-    --pinky: #e856e8;
-    --pinkyPlus: #cf28cf;
-    --bluey: #04306E;
-    --blueyPlus: #081A49;
-    --yellow-moon: #fef790;
     --mainTitle: "groovy";
     --secondTitle: "PoppinsBold";
     --menu: "PoppinsBold";
+
+    --heroH1: #bf7f7f;
+    --heroH2: #455555;
+
 }
 @font-face {
     font-family: "PoppinsBold";

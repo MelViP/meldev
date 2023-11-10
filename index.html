@@ -2,11 +2,18 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/header/hamburguerMenu.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
+
     <link rel="stylesheet" href="./css/header.css" />
+
+    <link rel="stylesheet" href="./css/navegationMenu/Nav.css">
+    <link rel="stylesheet" href="./css/navegationMenu/hamburguerMenu.css">
+    <link rel="stylesheet" href="./css/navegationMenu/dropDownMenu.css">
+    <link rel="stylesheet" href="./css/navegationMenu/darkMode.css">
+    <link rel="stylesheet" href="./css/navegationMenu/changeLan.css">
+
+    <link rel="stylesheet" href="./css/heroSection/heroContainer.css" />
     <link rel="stylesheet" href="./css/heroSection/socialMedia.css" />
-    <link rel="stylesheet" href="./css/header/dropDownMenu.css">
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -14,13 +21,12 @@
   </head>
   <body>
     <header data-header>
-
-      <nav class="stickyNav">
+      <nav class="navegationMenu">
         <label class="hamburguerMenu">
-          <input type="checkbox">
+          <input type="checkbox" />
         </label>
-      <div class="changeLan"></div>
-        <ul>
+        <div class="changeLan"></div>
+        <ul class="stickyNav">
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Services</a></li>
@@ -30,9 +36,11 @@
       </nav>
 
       <div class="hero">
-        <h1>Front End Web Developer</h1>
-        <h3>Melany Villalobos</h3>
-        <img src="./assets/avatars/avatar2.png">
+        <img class="avatar-hero" src="./assets/avatars/avatar2.png" />
+        <section class="hero-info">
+          <h1 class="jobTittle">Hi, I'm Mel</h1>
+          <h3>Front End Web Developer</h3>
+        </section>
         <ul class="socialMedia">
           <span class="linkedIn">
             <a href="https://www.linkedin.com/in/master-melany/"> in </a>
@@ -42,22 +50,18 @@
               <div class="frontSquare"></div>
             </a>
           </span>
-
           <span class="github">
             <a href="https://github.com/MelViP"></a>
           </span>
         </ul>
       </div>
-
     </header>
 
-    <body>
-      
-    </body>
+    <main>
 
-    <footer>
-      Developed by Mel with 
-    </footer>
+    </main>
+
+    <footer>Developed by Mel with</footer>
 
     <!-- <section class="contactMe_container"></section> -->
     <script src="./js/header/hamburguer-controller.js"></script>

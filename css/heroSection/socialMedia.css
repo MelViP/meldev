@@ -1,4 +1,6 @@
 .socialMedia{
+    padding: 1rem;
+    align-self: center;
     display: flex;
     gap: 1rem;
 }
