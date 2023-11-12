@@ -1,6 +1,6 @@
 .navegationMenu{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
 
   position: absolute;
@@ -8,6 +8,8 @@
 }
 .stickyNav{ 
   display: none;
+  align-items: center;
+  gap: 1.75rem;
 }
 .menu ul {
   display: none;
@@ -16,4 +18,17 @@
 }
 .menu>ul>li:hover {
     cursor: pointer;
+}
+
+@media only screen and (min-width: 801px) {
+  .navegationMenu{
+    /* align-items: center; */
+  }
+  .hamburguerMenu {
+    display: none;
+    opacity: 0;
+  }
+  .stickyNav{ 
+    display: flex;
+  }
 }

@@ -11,6 +11,7 @@
   --animation-timing: 200ms ease-in-out;
 }
 
+
 .hamburguerMenu,
 .closeMenu {
   display: flex;
