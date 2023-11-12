@@ -8,6 +8,10 @@ hamBtn.addEventListener("click", (event) => {
   textLine.classList.add("dropdownMenu");
   const content = `
         <ul>
+        <label class="closeMenu">
+          <input type="checkbox" />
+          <img width="67" height="67" src="https://img.icons8.com/external-flat-icons-inmotus-design/67/external-close-headphones-flat-icons-inmotus-design.png" alt="external-close-headphones-flat-icons-inmotus-design"/>
+        </label>
           <div class="darkMode-switch">
             <input class="checkbox" type="checkbox">
             <span class="slider"></span>
@@ -25,10 +29,6 @@ hamBtn.addEventListener("click", (event) => {
   closeMenu.addEventListener('click', () => {
     event.preventDefault();
     const textLine = document.querySelector(".dropdownMenu");
-    closeMenu.style.cssText = `
-      transition: 2s all;
-      animation: desaparecer 2s ease-in-out;
-    `;
     textLine.remove();
     }
   );

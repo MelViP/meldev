@@ -11,7 +11,8 @@
   --animation-timing: 200ms ease-in-out;
 }
 
-.hamburguerMenu {
+.hamburguerMenu,
+.closeMenu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,12 +28,13 @@
   content: "";
   width: var(--bar-width);
   height: var(--bar-height);
-  background-color: var(--yellow-moon);
+  background-color: black;
   border-radius: 9999px;
   transition: opacity var(--animation-timing), width var(--animation-timing);
 }
 
-.hamburguerMenu input{ 
+.hamburguerMenu input,
+.closeMenu input{ 
   appearance: none;
   margin: 0;
   padding: 0;

@@ -1,8 +1,10 @@
 header { 
-  background-image: url(../assets/backdrops/skyDive.jpg);
+  background-image: url(../assets/backdrops/cliff.jpeg);
   background-position: center;
   display: flex;
   justify-content: space-between;
+  background-size: cover;
+
 }
 /*mobile*/
 
