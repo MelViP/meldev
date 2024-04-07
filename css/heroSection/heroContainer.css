@@ -1,11 +1,11 @@
 .hero {
-  /*glass effect
+  /*glass effect*/
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(6.5px);
   border-radius: 10px;
-*/
+
 
   display: flex;
   flex-direction: column;
@@ -21,7 +21,19 @@
   width: 68vw;
   position: relative;
   top: 119px;
+  animation: floating 2s infinite ease-in-out alternate;
 }
+
+@keyframes floating {
+  100%{
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+  }
+}
+
 
 .hero-info {
   align-self: center;
@@ -36,10 +48,13 @@
     font-size: 2rem;
     color: var(--heroH1);
     font-family: var(--mainTitle);
+    text-shadow: 4px 4px 0 rgb(12, 12, 12);
 }
 .hero-info > h3 {
     color: var(--heroH2);
     font-size: 1.5rem;
     font-family: var(--secondTitle);
+    text-shadow: 2px 3px 0 #bf7fb2;
+
 }
 
